@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="fowler.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+    <link rel="manifest" href="./assets/site.webmanifest">
+    <link rel="favicon" href="./assets/favicon-16x16.png" type="faviconx" />
+</head>
+<body>
+<section class="navbar">
+      <header>
+        <nav>
+          <div class="nav-left">
+            <a class="logo-link" href="index.html">
+              <h1 class="logo-name">SHREE NUTRITION</h1>
+              <!-- <img src="./assets/logo.jpg" alt="Logo" class="logo" /> -->
+            </a>
+            
+          </div>
+          <div class="nav-right">
+
+            <ul class="nav-child">
+              <li class="rest-pg"><a href="index.html">Home</a></li>
+              <li class="rest-pg"><a href="ourservice.html">Our Serivce</a></li>
+              <li class="rest-pg"><a href="whoweare.html">Who are we?</a></li>
+              <li class="rest-pg"><a href="product.html">All Products</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+    </section>
+</body>
+<section class="hero">
+      <div class="hero-content">
+        <div class="slideshow-container">
+          <a href="7.html" class="mySlides fade">
+              <img class="hero-image" src="./assets/7.jpg" />
+              <div class="banner-txt">COMBAT 100% Whey Ultra Premium</div>
+          </a>
+
+          <a href="8.html" class="mySlides fade">
+            <img class="hero-image" src="./assets/9.JPG" />
+            <div class="banner-txt">Turbo Whey Protein Isolate Whey Protein</div>
+          </a>
+
+          <a href="2.html" class="mySlides fade">
+            <img class="hero-image" src="./assets/2.JPG" />
+            <div class="banner-txt">Prostar 100% Whey Protein</div>
+          </a>
+        </div>
+        <br />
+
+        <div style="text-align: center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+
+        <script>
+          let slideIndex = 0;
+          showSlides();
+
+          function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+              slideIndex = 1;
+            }
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+          }
+        </script>
+        <ul class="hero-qualities">
+          <li class="quality-service">
+            <img
+              class="quality-img"
+              src="./assets/bolt_FILL0_wght400_GRAD0_opsz48.svg"
+              alt="S"
+            />Power Workout
+          </li>
+          <li class="quality-service">
+            <img
+              class="quality-img"
+              src="./assets/currency_rupee_FILL0_wght400_GRAD0_opsz48.svg"
+              alt="S"
+            />Lowest Cost
+          </li>
+          <li class="quality-service">
+            <img
+              class="quality-img"
+              src="./assets/fitness_center_FILL0_wght400_GRAD0_opsz48.svg"
+              alt="S"
+            />Great Nutrition
+          </li>
+          <li class="quality-service">
+            <img
+              class="quality-img"
+              src="./assets/sprint_FILL0_wght400_GRAD0_opsz48.svg"
+              alt="S"
+            />Muscle Growth
+          </li>
+        </ul>
+      </div>
+</section>
+   <section class="product">
+        <img class="product-img" src="./assets/11.JPG" alt="Product.img">
+        <p class="description">
+            <!-- <h2>Description</h2>     -->
+            Avvatar  Whey Protein is packed with 24 GMS protein per scoop. The primary source is whey protein concentrate which is loaded with health-boosting bioactive compounds along with natural phospholipids for quick recovery and sustained results!
+            A BLEND OF PREMIUM WHEY PROTEIN CONCENTRATE AND ISOLATE - Avvatar's 100% whey protein is packed with 24Gms of freshest protein per serving.
+            NATURALLY OCCURING BCAA & EAA - Our protein natural BCAA & EAA to speed up the recovery process.
+            GLUTAMIC ACID FOR MAINTAINING ACID LEVELS - Ensures functioning of the immune and digestion 
+            MADE IN INDIA - 1st truly “Made in India” whey protein, Manufactured in Manchar, Pune.
+            AVVATAR'S PROMISE - Milked, processed and packed within 24 hours, to bring you the purest whey.
+            <a href="wa.me/+918927272748" class="enquire">Enquire Now!</a>
+        </p>
+    </section> 
+    <footer>
+        <a class="logo-link" href="index.html">
+          <h1>SHREE NUTRITION</h1>
+        </a>
+        <div class="adi-footer">
+          <div class="privacy-policy">
+            <h2>Our Links</h2>
+            <ul class="links-footer">
+              <li>Instagram</li>
+              <li>Whatsapp</li>
+              <li>Facebook</li>
+            </ul>
+          </div>
+          <h4 class="logo-footer-txt">
+            SHREE NUTRION|&#169;
+            <span class="footer-contact"
+              >Contact&nbsp;:&nbsp;+91&nbsp;8927272748</span
+            >
+            <span
+              >Address: S. No. 694, Sahakar Bhavan, Adarsh Nagar, Satara Road,
+              Pune - 411037</span
+            >
+          </h4>
+        </div>
+      </footer>
+</html>

@@ -1,5 +1,5 @@
 <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fowler.css">
 </head>
 <body>
 <section class="navbar">
@@ -7,7 +7,7 @@
         <nav>
           <div class="nav-left">
             <a class="logo-link" href="index.html">
-              <h1 class="logo-name">SHREE NUTRION</h1>
+              <h1 class="logo-name">SHREE NUTRITION</h1>
               <!-- <img src="./assets/logo.jpg" alt="Logo" class="logo" /> -->
             </a>
             
