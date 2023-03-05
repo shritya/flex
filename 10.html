@@ -30,8 +30,7 @@
         </nav>
       </header>
     </section>
-</body>
-<section class="hero">
+    <section class="hero">
       <div class="hero-content">
         <div class="slideshow-container">
           <a href="7.html" class="mySlides fade">
@@ -113,12 +112,76 @@
       </div>
 </section>
    <section class="product">
-        <img class="product-img" src="./assets/9.JPG" alt="Product.img">
+    <script>
+      let slideimg = 1;
+      showSlides(slideimg);
+      
+      function plusSlides(n) {
+        showSlides(slideimg += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideimg = n);
+      }
+      
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("product-img");
+        let dots = document.getElementsByClassName("demo");
+        let captionText = document.getElementById("caption");
+        if (n > slides.length) {slideimg = 1}
+        if (n < 1) {slideimg = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideimg-1].style.display = "block";
+        dots[slideimg-1].className += " active";
+        captionText.innerHTML = dots[slideimg-1].alt;
+      }
+      </script>
+        <div class="container">
+          <div class="product-img">
+            <div class="numbertext">1 / 4</div>
+            <img src="assets/9.JPG" style="width:50%">
+          </div>
+        
+          <div class="product-img">
+            <div class="numbertext">2 / 4</div>
+            <img src="assets/91.webp" style="width:50%">
+          </div>
+        
+          <div class="product-img">
+            <div class="numbertext">3 / 4</div>
+            <img src="assets/92.webp" style="width:50%">
+          </div>
+            
+          <div class="product-img">
+            <div class="numbertext">4 / 4</div>
+            <img src="assets/93.webp" style="width:50%">
+          </div>
+          <div class="row">
+            <div class="column">
+              <img class="demo cursor" src="assets/9.jpg" style="width:50%" onclick="currentSlide(1)" alt="The Woods">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="assets/91.webp" style="width:50%" onclick="currentSlide(2)" alt="Cinque Terre">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="assets/92.webp" style="width:50%" onclick="currentSlide(3)" alt="Mountains and fjords">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="assets/93.webp" style="width:50%" onclick="currentSlide(4)" alt="Northern Lights">
+            </div>
+          </div>
+        </div>
         <p class="description">
             <!-- <h2>Description</h2>     -->
             Labrada Turbo Whey packs 35g of protein and 3 grams of muscle building and performance enhancing creatine per serving and is an excellent source of all the essential amino acids, including the branched chain amino acids (BCAAs) to provide support for muscle tissue; and glutamine, to promote recovery from exercise.
             Labrada Turbo Whey is perfect for athletes, bodybuilders, fitness enthusiasts and dieters who want to supplement their diet with the purest, highest-quality whey proteins.
-            <a href="wa.me/+918927272748" class="enquire">Enquire Now!</a>
+            <a href="https://wa.me/+918927272748" class="enquire">Enquire Now!</a>
         </p>
     </section> 
     <footer>
@@ -146,4 +209,5 @@
           </h4>
         </div>
       </footer>
+    </body>
 </html>

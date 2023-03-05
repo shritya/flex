@@ -30,8 +30,7 @@
           </div>
         </nav>
       </header>
-    </section>
-</body>
+
 <section class="hero">
       <div class="hero-content">
         <div class="slideshow-container">
@@ -113,11 +112,75 @@
         </ul>
       </div>
 </section>
-   <section class="product">
-    <img class="product-img" src="./assets/2.JPG" alt="Product.img">
+<section class="product">
+  <script>
+    let slideimg = 1;
+    showSlides(slideimg);
+    
+    function plusSlides(n) {
+      showSlides(slideimg += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideimg = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("product-img");
+      let dots = document.getElementsByClassName("demo");
+      let captionText = document.getElementById("caption");
+      if (n > slides.length) {slideimg = 1}
+      if (n < 1) {slideimg = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideimg-1].style.display = "block";
+      dots[slideimg-1].className += " active";
+      captionText.innerHTML = dots[slideimg-1].alt;
+    }
+    </script>
+      <div class="container">
+        <div class="product-img">
+          <div class="numbertext">1 / 4</div>
+          <img src="assets/2.JPG" style="width:50%">
+        </div>
+      
+        <div class="product-img">
+          <div class="numbertext">2 / 4</div>
+          <img src="assets/21.jpg" style="width:50%">
+        </div>
+      
+        <div class="product-img">
+          <div class="numbertext">3 / 4</div>
+          <img src="assets/22.jpg" style="width:50%">
+        </div>
+          
+        <div class="product-img">
+          <div class="numbertext">4 / 4</div>
+          <img src="assets/23.jpg" style="width:50%">
+        </div>
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor" src="assets/2.jpg" style="width:50%" onclick="currentSlide(1)" alt="The Woods">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="assets/21.jpg" style="width:50%" onclick="currentSlide(2)" alt="Cinque Terre">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="assets/22.jpg" style="width:50%" onclick="currentSlide(3)" alt="Mountains and fjords">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="assets/23.jpg" style="width:50%" onclick="currentSlide(4)" alt="Northern Lights">
+          </div>
+        </div>
+      </div>
     <p class="description">
     Prostar® 100% Whey utilizes a proprietary micro and ultra-ﬁltration process to ensure the highest quality whey protein powder. We pack the highest protein content per serving with 25 grams of our whey protein isolate, whey protein concentrate, and whey peptide blend. Prostar® 100% Whey mixes instantly to make the best protein shake or smoothie.
-<a href="wa.me/+918927272748" class="enquire">Enquire Now!</a>
+<a href="https://wa.me/+918927272748" class="enquire">Enquire Now!</a>
 </p>
    </section> 
    <footer>
@@ -145,4 +208,5 @@
           </h4>
         </div>
       </footer>
+      </body>
 </html>
