@@ -180,9 +180,12 @@ nav {
     left: 329px;
     height: 40px;
   }
+  .hero{
+
+    margin-top: 60px;
+  }
 }
 .hero {
-  /* margin-top: 60px; */
   /* background-image: url(./assets/190501-Healthcare.jpg); */
   height: 100%;
   background-color: white;
@@ -429,6 +432,10 @@ img {
   padding: 50px 0 50px 0;
 }
 .section-heading {
+  color: green;
+  font-weight: bolder;
+}
+.section-heading-2{
   color: green;
   font-weight: bolder;
 }
