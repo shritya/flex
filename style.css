@@ -182,7 +182,7 @@ nav {
   }
 }
 .hero {
-  margin-top: 60px;
+  /* margin-top: 60px; */
   /* background-image: url(./assets/190501-Healthcare.jpg); */
   height: 100%;
   background-color: white;
@@ -676,6 +676,9 @@ footer {
     align-items: center;
     margin: auto;
     padding: 10px;
+  }
+  .section-heading{
+    margin-top: 30px;
   }
 }
 /* Animations */

@@ -1,212 +1,212 @@
 <!DOCTYPE html>
-<head>
+  <head>
     <link rel="stylesheet" href="fowler.css">
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
     <link rel="manifest" href="./assets/site.webmanifest">
     <link rel="favicon" href="./assets/favicon-16x16.png" type="faviconx" />
-</head>
-<body>
-<section class="navbar">
-      <header>
-        <nav>
-          <div class="nav-left">
-            <a class="logo-link" href="index.html">
-              <h1 class="logo-name">SHREE NUTRITION</h1>
-              
-              <!-- <img src="./assets/logo.jpg" alt="Logo" class="logo" /> -->
-            </a>
-            
-          </div>
-          <div class="nav-right">
+  </head>
+    <body>
+      <section class="navbar">
+            <header>
+              <nav>
+                <div class="nav-left">
+                  <a class="logo-link" href="index.html">
+                    <h1 class="logo-name">SHREE NUTRITION</h1>
+                    
+                    <!-- <img src="./assets/logo.jpg" alt="Logo" class="logo" /> -->
+                  </a>
+                  
+                </div>
+                <div class="nav-right">
 
-            <ul class="nav-child">
-              <li class="rest-pg"><a href="index.html">Home</a></li>
-              <li class="rest-pg"><a href="ourservice.html">Our Serivce</a></li>
-              <li class="rest-pg"><a href="whoweare.html">Who are we?</a></li>
-              <li class="rest-pg"><a href="product.html">All Products</a></li>
-            </ul>
-          </div>
-        </nav>
-      </header>
+                  <ul class="nav-child">
+                    <li class="rest-pg"><a href="index.html">Home</a></li>
+                    <li class="rest-pg"><a href="ourservice.html">Our Serivce</a></li>
+                    <li class="rest-pg"><a href="whoweare.html">Who are we?</a></li>
+                    <li class="rest-pg"><a href="product.html">All Products</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </header>
 
-<section class="hero">
-      <div class="hero-content">
-        <div class="slideshow-container">
-          <a href="7.html" class="mySlides fade">
-              <img class="hero-image" src="./assets/7.jpg" />
-              <div class="banner-txt">COMBAT 100% Whey Ultra Premium</div>
-          </a>
+      <section class="hero">
+            <div class="hero-content">
+              <div class="slideshow-container">
+                <a href="7.html" class="mySlides fade">
+                    <img class="hero-image" src="./assets/7.jpg" />
+                    <div class="banner-txt">COMBAT 100% Whey Ultra Premium</div>
+                </a>
 
-          <a href="8.html" class="mySlides fade">
-            <img class="hero-image" src="./assets/9.JPG" />
-            <div class="banner-txt">Turbo Whey Protein Isolate Whey Protein</div>
-          </a>
+                <a href="8.html" class="mySlides fade">
+                  <img class="hero-image" src="./assets/9.JPG" />
+                  <div class="banner-txt">Turbo Whey Protein Isolate Whey Protein</div>
+                </a>
 
-          <a href="2.html" class="mySlides fade">
-            <img class="hero-image" src="./assets/2.JPG" />
-            <div class="banner-txt">Prostar 100% Whey Protein</div>
-          </a>
-        </div>
-        <br />
+                <a href="2.html" class="mySlides fade">
+                  <img class="hero-image" src="./assets/2.JPG" />
+                  <div class="banner-txt">Prostar 100% Whey Protein</div>
+                </a>
+              </div>
+              <br />
 
-        <div style="text-align: center">
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-        </div>
+              <div style="text-align: center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
 
+              <script>
+                let slideIndex = 0;
+                showSlides();
+
+                function showSlides() {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {
+                    slideIndex = 1;
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex - 1].style.display = "block";
+                  dots[slideIndex - 1].className += " active";
+                  setTimeout(showSlides, 2000); // Change image every 2 seconds
+                }
+              </script>
+              <ul class="hero-qualities">
+                <li class="quality-service">
+                  <img
+                    class="quality-img"
+                    src="./assets/bolt_FILL0_wght400_GRAD0_opsz48.svg"
+                    alt="S"
+                  />Power Workout
+                </li>
+                <li class="quality-service">
+                  <img
+                    class="quality-img"
+                    src="./assets/currency_rupee_FILL0_wght400_GRAD0_opsz48.svg"
+                    alt="S"
+                  />Lowest Cost
+                </li>
+                <li class="quality-service">
+                  <img
+                    class="quality-img"
+                    src="./assets/fitness_center_FILL0_wght400_GRAD0_opsz48.svg"
+                    alt="S"
+                  />Great Nutrition
+                </li>
+                <li class="quality-service">
+                  <img
+                    class="quality-img"
+                    src="./assets/sprint_FILL0_wght400_GRAD0_opsz48.svg"
+                    alt="S"
+                  />Muscle Growth
+                </li>
+              </ul>
+            </div>
+      </section>
+      <section class="product">
         <script>
-          let slideIndex = 0;
-          showSlides();
-
-          function showSlides() {
+          let slideimg = 1;
+          showSlides(slideimg);
+          
+          function plusSlides(n) {
+            showSlides(slideimg += n);
+          }
+          
+          function currentSlide(n) {
+            showSlides(slideimg = n);
+          }
+          
+          function showSlides(n) {
             let i;
-            let slides = document.getElementsByClassName("mySlides");
-            let dots = document.getElementsByClassName("dot");
+            let slides = document.getElementsByClassName("product-img");
+            let dots = document.getElementsByClassName("demo");
+            let captionText = document.getElementById("caption");
+            if (n > slides.length) {slideimg = 1}
+            if (n < 1) {slideimg = slides.length}
             for (i = 0; i < slides.length; i++) {
               slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {
-              slideIndex = 1;
             }
             for (i = 0; i < dots.length; i++) {
               dots[i].className = dots[i].className.replace(" active", "");
             }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            setTimeout(showSlides, 2000); // Change image every 2 seconds
+            slides[slideimg-1].style.display = "block";
+            dots[slideimg-1].className += " active";
+            captionText.innerHTML = dots[slideimg-1].alt;
           }
-        </script>
-        <ul class="hero-qualities">
-          <li class="quality-service">
-            <img
-              class="quality-img"
-              src="./assets/bolt_FILL0_wght400_GRAD0_opsz48.svg"
-              alt="S"
-            />Power Workout
-          </li>
-          <li class="quality-service">
-            <img
-              class="quality-img"
-              src="./assets/currency_rupee_FILL0_wght400_GRAD0_opsz48.svg"
-              alt="S"
-            />Lowest Cost
-          </li>
-          <li class="quality-service">
-            <img
-              class="quality-img"
-              src="./assets/fitness_center_FILL0_wght400_GRAD0_opsz48.svg"
-              alt="S"
-            />Great Nutrition
-          </li>
-          <li class="quality-service">
-            <img
-              class="quality-img"
-              src="./assets/sprint_FILL0_wght400_GRAD0_opsz48.svg"
-              alt="S"
-            />Muscle Growth
-          </li>
-        </ul>
-      </div>
-</section>
-<section class="product">
-  <script>
-    let slideimg = 1;
-    showSlides(slideimg);
-    
-    function plusSlides(n) {
-      showSlides(slideimg += n);
-    }
-    
-    function currentSlide(n) {
-      showSlides(slideimg = n);
-    }
-    
-    function showSlides(n) {
-      let i;
-      let slides = document.getElementsByClassName("product-img");
-      let dots = document.getElementsByClassName("demo");
-      let captionText = document.getElementById("caption");
-      if (n > slides.length) {slideimg = 1}
-      if (n < 1) {slideimg = slides.length}
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideimg-1].style.display = "block";
-      dots[slideimg-1].className += " active";
-      captionText.innerHTML = dots[slideimg-1].alt;
-    }
-    </script>
-      <div class="container">
-        <div class="product-img">
-          <div class="numbertext">1 / 4</div>
-          <img src="assets/2.JPG" style="width:100%">
-        </div>
-      
-        <div class="product-img">
-          <div class="numbertext">2 / 4</div>
-          <img src="assets/21.jpg" style="width:100%">
-        </div>
-      
-        <div class="product-img">
-          <div class="numbertext">3 / 4</div>
-          <img src="assets/22.jpg" style="width:100%">
-        </div>
-          
-        <div class="product-img">
-          <div class="numbertext">4 / 4</div>
-          <img src="assets/23.jpg" style="width:100%">
-        </div>
-        <div class="row">
-          <div class="column">
-            <img class="demo cursor" src="assets/2.JPG" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
-          </div>
-          <div class="column">
-            <img class="demo cursor" src="assets/21.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
-          </div>
-          <div class="column">
-            <img class="demo cursor" src="assets/22.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-          </div>
-          <div class="column">
-            <img class="demo cursor" src="assets/23.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-          </div>
-        </div>
-      </div>
-    <p class="description">
-    Prostar® 100% Whey utilizes a proprietary micro and ultra-ﬁltration process to ensure the highest quality whey protein powder. We pack the highest protein content per serving with 25 grams of our whey protein isolate, whey protein concentrate, and whey peptide blend. Prostar® 100% Whey mixes instantly to make the best protein shake or smoothie.
-<a href="https://wa.me/+918927272748" class="enquire">Enquire Now!</a>
-</p>
-   </section> 
-   <footer>
-        <a class="logo-link" href="index.html">
-          <h1>SHREE NUTRITION</h1>
-        </a>
-        <div class="adi-footer">
-          <div class="privacy-policy">
-            <h2>Our Links</h2>
-            <ul class="links-footer">
-              <li>Instagram</li>
-              <li>Whatsapp</li>
-              <li>Facebook</li>
-            </ul>
-          </div>
-          <h4 class="logo-footer-txt">
-            SHREE NUTRION|&#169;
-            <span class="footer-contact"
-              >Contact&nbsp;:&nbsp;+91&nbsp;8927272748</span
-            >
-            <span
-              >Address: S. No. 694, Sahakar Bhavan, Adarsh Nagar, Satara Road,
-              Pune - 411037</span
-            >
-          </h4>
-        </div>
-      </footer>
-      </body>
+          </script>
+            <div class="container">
+              <div class="product-img">
+                <div class="numbertext">1 / 4</div>
+                <img src="assets/2.JPG" style="width:100%">
+              </div>
+            
+              <div class="product-img">
+                <div class="numbertext">2 / 4</div>
+                <img src="assets/21.jpg" style="width:100%">
+              </div>
+            
+              <div class="product-img">
+                <div class="numbertext">3 / 4</div>
+                <img src="assets/22.jpg" style="width:100%">
+              </div>
+                
+              <div class="product-img">
+                <div class="numbertext">4 / 4</div>
+                <img src="assets/23.jpg" style="width:100%">
+              </div>
+              <div class="row">
+                <div class="column">
+                  <img class="demo cursor" src="assets/2.JPG" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="assets/21.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="assets/22.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="assets/23.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+                </div>
+              </div>
+            </div>
+          <p class="description">
+          Prostar® 100% Whey utilizes a proprietary micro and ultra-ﬁltration process to ensure the highest quality whey protein powder. We pack the highest protein content per serving with 25 grams of our whey protein isolate, whey protein concentrate, and whey peptide blend. Prostar® 100% Whey mixes instantly to make the best protein shake or smoothie.
+      <a href="https://wa.me/+918927272748" class="enquire">Enquire Now!</a>
+      </p>
+        </section> 
+        <footer>
+              <a class="logo-link" href="index.html">
+                <h1>SHREE NUTRITION</h1>
+              </a>
+              <div class="adi-footer">
+                <div class="privacy-policy">
+                  <h2>Our Links</h2>
+                  <ul class="links-footer">
+                    <li>Instagram</li>
+                    <li>Whatsapp</li>
+                    <li>Facebook</li>
+                  </ul>
+                </div>
+                <h4 class="logo-footer-txt">
+                  SHREE NUTRION|&#169;
+                  <span class="footer-contact"
+                    >Contact&nbsp;:&nbsp;+91&nbsp;8927272748</span
+                  >
+                  <span
+                    >Address: S. No. 694, Sahakar Bhavan, Adarsh Nagar, Satara Road,
+                    Pune - 411037</span
+                  >
+                </h4>
+              </div>
+            </footer>
+  </body>
 </html>
